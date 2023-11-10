@@ -1,2 +1,2 @@
 # Repositório de Desafio
-## BootCamp DIO Jogos
+## BootCamp DIO - DESENVOLVIMENTO DE JOGOS
