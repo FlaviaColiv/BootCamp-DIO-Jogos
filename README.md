@@ -1,2 +1,4 @@
-# Repositório de Desafio
-## BootCamp DIO - DESENVOLVIMENTO DE JOGOS
+# Repositório - Bootcamp DESENVOLVIMENTO DE JOGO
+## Com a DIO
+
+Com anotações, levantamento de dados e códigos desenvolvidos.
