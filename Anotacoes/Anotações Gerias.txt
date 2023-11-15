@@ -1,2 +1,90 @@
-Linguagem e servidor
+LINGUAGENS
+
+	Do servidor (principais) - php; Ruby; C#; JS; Java;
+	Do cliente (nesse bootcamp) - JS;
+
+
+HTML
+
+	<input> introduz campo de preenchimento
+
+
+IMAGEM E TAMANHO
+
+	<img width="400" src="____\______\">
+
+TAGS
+ 
+	<blockquote></blockquote> separa um trecho do restante do texto
+	<sup></sup> escrita parte alta
+	<sub></sub> escrita parte baixa
+
+
+LISTAS - 
+
+	ORDENADAS <ol><li><ol></ol></li></ol>  adiciona numeros
+	NÃO ORDENADAS <ul><li></li></ul> adiciona simbolos
+
+LINK
+	
+
+	<a href="http://...></a>
+	Abrir em outra aba adiciona: target="_blank"
+	Indicação: para navegação no proprio site usar _self, para sites externos que usar _blank.
+	title = "Texto de mensagem que aparece ao passar mouse por cima do link"
+
+FORMULARIOS - processado no servidor, campos de preenchimento de dados
+
+	<form></form>
+		abraça todos os outros. as outras tags funcionam dentro dessa.
+		as outras 
+		o atributo name, é o identificador
+		o atributo action, o local que serão enviados os dados
+		o atributo method, método de envio de dados. Com o POST, será enviado sem a visualização direta do usuário. E GET, envia na url
+		o atributo action, se abre ou não outra aba.
+		o atributo autocomplete, se on, abre a opção de gravar dados e autocompletar e desativado é com o off.
+		Tudo com préfixo 'on' significa evento. exemplo onsubmit, adiciona um comando de javascript.
+		
+
+	<input  />
+		incluir type = "text" name = "nome"
+		adiciona caixa de preenchimento, inserir valores. 
+		Tipos (type): 
+			text; 
+			number - funções min = valor mínimo; max = valor maximo; step = intervalos.
+			range - cria um scroll;
+			color;
+			E-mail; url; Date; Checkbox; Radio; Hidden (manda informação por debaixo dos panos); file;  
+			password (criptografa visualização);
+		 
+
+	<checkbox>
+		
+
+	<radio>
+
+	<button>
+		adiciona um botão.
+		tipos: submit; button; reset;
+
+	<select><option value=""></option></select> - cria uma lista de opções.
+
+	<textarea> 	
+		cria campo que tem a opção de incluir mais informações.
+		tamanho definido pelo cols e rows
+
+TAGs
+
+	<div> - estruturação dos quadrantes definidos no layout
+	<span> - separar trecho para estilização solo.
+
+	<fieldsed>
+
+
+
+
+
+
+
+
 
