@@ -1,5 +1,57 @@
-
+/* SELETOR DE TAG OU DE TIPO */
 
 h1 {
-    
+    background: darkblue;
+    color: lightgreen;
+}
+
+div {
+    background: lightblue;
+    color: darkblue;
+}
+
+li {
+    background: violet;
+}
+
+/* SELETOR DE ID */
+
+#texto-boas-vindas {
+    background: red;
+    color: white;
+}
+
+#explicacao-seletores {
+    background: grey;
+}
+
+/* SELETORES POR CLASSES */
+
+.seletor {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* SELETOR UNIVERSAL */
+
+* {
+    font-weight: bold;
+}
+
+/* SELETOR DE ATRIBUTO */
+
+[title] {
+    color: green;
+}
+
+[title="seletor-classe"] {
+    background: gray;
+}
+
+[title ~= "universal"] {
+    background: #AA2299;
+}
+
+[title^="clas"] {
+    color: #AA2299;
 }
