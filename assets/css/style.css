@@ -51,7 +51,3 @@ li {
 [title ~= "universal"] {
     background: #AA2299;
 }
-
-[title^="clas"] {
-    color: #AA2299;
-}

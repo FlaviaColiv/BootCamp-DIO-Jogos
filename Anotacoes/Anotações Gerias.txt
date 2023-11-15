@@ -35,6 +35,8 @@ LINK
 
 FORMULARIOS - processado no servidor, campos de preenchimento de dados
 
+		placeholder="Adiciona texto ao campo de preenchimento"
+
 	<form></form>
 		abraça todos os outros. as outras tags funcionam dentro dessa.
 		as outras 
@@ -77,9 +79,120 @@ TAGs
 
 	<div> - estruturação dos quadrantes definidos no layout
 	<span> - separar trecho para estilização solo.
+	<label> - separar trecho usado, normalmente, em lado de um campo como o input
 
-	<fieldsed>
+	<fieldsed> - faz um retângulo em volta (circunda a área)
+		dentro coloca <legend> como título da quadrante.
 
+	<embed> será descontinuado, então, pode usar a tag <video> com <source> dentro
+	Frame - mini janelas de html na mesma página
+
+	<iframe widht="400" height="300" src="http....> 
+		pode afetar a segurança do site.
+		mostra o conteúdo de outro site dentro do site.
+		conta a visita no site linkado no iframe.
+		exemplos de uso, colocar video do youtube, ou mapa do googleMap. 
+	
+	<header>
+	<main> - aparecer uma unica vez
+	<footer>
+	<nav> acessos de navegação
+	<aside> relacionado ao conteudo principal
+	<article> sessoes independentes
+	<section> - elementos de cabeçalho e conteúdo
+	<div> genérica, sem valor semantico, estilização
+	 
+
+MULTIMÍDIA
+
+	<img src="endereço da imagem" alt="descrição da imagem" title="o que aparece ao passar o mouse">
+	<figcaption> descrição de imagem dentro da figure
+	<figure> bloco organizador de imagem
+
+TABELAS
+
+	<table></table> bloco da tabela
+	<caption></caption> da um titulo a tabela
+	<tr></tr> divide em linhas
+	<td></td> cria colunas
+	
+GERENCIAMENTO DE FOCO
+
+		tabindex="1" - grau de foco, por padrão vem zero (que é a ativação), sem foco usa '-1', foco utilizando tab do teclado.
+
+
+
+CSS
+
+	    <p id="explicacao-seletores">No CSS nós possuímos os seletores por ID.</p>
+    <div>
+        <ul>
+            <li class="seletor"><b>Seletor por Tipo: </b>Busca elementos por uma tag HTML específica.</li> 
+            <li title="seletor-id"><b>Seletor por ID (#): </b>Busca elementos através do atributo '#'</li>
+            <li title="seletor-classe universal"><b>Seletor por Classe (.): </b>Busca elementos através do atributo '.'</li>
+            <li><b>Seletor Universal (*): </b>Seleciona todos os elementos HTML.</li>
+            <li><b>Seletor de Atributo ([atrib]): </b>Seleciona elementos que possuem um atributo e conseguimos também buscar atributos com um valor específico.</li>
+        </ul>
+
+/* SELETOR DE TAG OU DE TIPO */
+
+h1 {
+    background: darkblue;
+    color: lightgreen;
+}
+
+div {
+    background: lightblue;
+    color: darkblue;
+}
+
+li {
+    background: violet;
+}
+
+/* SELETOR DE ID */
+
+#texto-boas-vindas {
+    background: red;
+    color: white;
+}
+
+#explicacao-seletores {
+    background: grey;
+}
+
+/* SELETORES POR CLASSES */
+
+.seletor {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* SELETOR UNIVERSAL */
+
+* {
+    font-weight: bold;
+}
+
+/* SELETOR DE ATRIBUTO */
+
+[title] {
+    color: green;
+}
+
+[title="seletor-classe"] {
+    background: gray;
+}
+
+
+
+[title ~= "universal"] {
+    background: #AA2299;
+}
+
+[title^="clas"] {
+    color: #AA2299;
+}
 
 
 
