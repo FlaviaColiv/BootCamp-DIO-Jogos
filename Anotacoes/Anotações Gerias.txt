@@ -498,22 +498,55 @@ MEDIA QUERIES
 
 @media (orientation: landscape) {} - orientação da tela. deitado
 
+@media (min-width: 700px) and (orientation: landscape) { ... } - só funciona se ambos se concretizarem
+
+@media (min-width: 700px), handheld and (orientation: landscape) { ... } - funciona se pelo menos 1 se concretizar.
 
 
 
 
+VIEWPORT
+
+coloca essa informação na parte head do html.
+informa que deve abrir na largura do equipamento (tela), e na escala 1.
+
+<meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0"
+>
+
+
+MEDIDAS FLEXÍVEIS
+
+max-width: 30px; - definir largura máxima, mas, não a mínima ou estática.
+
+
+IMAGENS RESPONSIVAS
+
+no html 
+
+<img srcset="caminho-img-pequena.xxx 200w, caminho-img-grande.xxx 718w"
+     sizes="(max-width: 300px) 200px, 400px"
+     src="caminho-img-grande.xxx"
+     alt="descrição da imagem" />
+
+-> Em srcset, define os diferentes endereços e tamanho (w = width) da imagem.
+-> Em sizes, lógica de = nesse tamanho, se verdadeiro na tela de até 300px, primeira imagem manterá tamanho máximo de 200px, se falso, será usado a segunda imagem e no tamanho máximo de 400px.
 
 
 
 
+ESTRUTURA DE PASTAS CSS
 
+BASE - Seletores de elementos, pseudo-seletores e estilos globais. Ex. div,section etc.
 
+LAYOUT - Elementos que são únicos na página e, geralmente, representam as partes grandes do nosso site. Ex. header, main, footer etc.
 
+MODULE - Elementos que sao reutilizados em diversos locais do nosso site. Ex: botoes, listas etc.
 
+STATE - Modificado dos nossos elementos. Ex: quando um botao esta com foco, etc.
 
-
-
-
+THEME - Geralmente ficam cores dos temas, tipos de fontes e etc. Usada apenas quando temos mais de uma opçã de tema no nosso site. Ex: tema claro, tema escuro etc.
 
 
 
