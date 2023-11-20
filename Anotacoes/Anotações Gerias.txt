@@ -287,6 +287,7 @@ padding: 10px;
 box-sizing: border-box; - terá a largura e altura finais de acordo ao que programamos em height e width, mesmo alterando margin e padding.
 	    content-box; - soma todas as alterações, mudando o tamanho final.
 
+
 OUTROS ESTILOS 
 
 border-widht: 1px;
@@ -308,6 +309,202 @@ float: left; - flutuação, posição nesse caso a esquerda dos outros elementos
 
 overflow: hidden; - conteúdo maior que a caixa de referência sumisse;
 	  scroll; - adiciona barra de elemento sem ultrapassar tamanho da caixa de referencia.
+
+font-size: 45px; - tamanho da fonte.
+font-weight: bold; - peso da fonte.
+
+text-align: posição; - 
+text-indent: posiciona o inicio do texto e a margem
+letter-spacing: determinar espaçamento entre as letras.
+line-height: altura; - espaçamento entre as linhas de um texto.
+
+list-style: none; - retira todas as pré-definições da lista.
+	    lower-roman; - lista em numero romanos (minusculos).
+
+text-decoration: none; - remove o sublinhado do link;
+
+background-image: url(); - imagens decorativas e de fundo.
+	   repeat: no-repeat; - sem repetir a imagem.
+	   position: position;
+	   size: 10px 10px;
+
+width: inherit; - para erdar forçadamente os comandos do 'pai', 
+
+
+TRANSIÇÕES
+
+.botao {
+ padding: 8px;
+ background-color: cor;
+ transition: background-color 0.5s; /* local e tempo da transição.*/
+}
+
+.botao:hover { /* mudança ao passar o mouse */
+ background-color: cor2;
+}
+
+
+ANIMAÇÃO COM LINHA DO TEMPO
+
+/* define a animação */
+@keyframes exemplo {
+ 0% { /*inicio da animação */
+  background-color: cor1;
+  top: 0;
+  left: 0;
+ }
+
+ 50% { /* posição intermediária */
+  top: 0;
+  left: 100px;
+
+ 100% { /* fim da animação */
+  background-color: cor2;
+  top: 100px;
+  left: 100px;
+ }
+}
+
+.local {
+ width: 300px;
+ height: 300px;
+ animation: exemplo 1s infinite /* chamar a animação, define tempo, e vezes da repetição. */ alternate /* movimento de boomerang */;
+ position: relative;
+ will-change: left, top; /* navegador entender que são elementos que serão animados */
+}
+
+
+ESCALAS
+
+transform: scaleX (0.3); - escala do eixo x em 3% (1 = 100%) - só afetam o próprio elemento sem afetar os demais.
+
+
+ROTAÇÃO
+
+transform: rotate(35deg); - define grau de rotação em ângulo.
+
+.caixa {
+ width: 100px;
+ height: 100px;
+ animation: exemplo2 2s infinite;
+}
+
+@keyframes exemplo2 {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+
+TRANSLAR A POSIÇÃO DOS ELEMENTOS
+
+transform: translate (30px 15px); - define eixos x e y
+	   translateY(50px); - so no eixo y, e com x, so no eixo x.
+
+DISTORÇÃO 
+
+transform: skewX(10deg); - puxa um lado.
+
+TRANSPARENCIA DE UM ELEMENTO
+
+opacity: 0.5; - define a opacidade do elemento.
+
+
+FLEX BOX
+
+.pai {
+ display: flex; - altera o posicionamento do filho, funciona ocupando toda a área, lado a lado. (importante para ativar próximos comandos)
+ display: inline-flex; - o espaço ocupado é o tamanho dos objetos, lado a lado.
+
+ flex-direction: row; - vem como padrão, lado a lado, posiocionado a esquerda.
+		 row-reverse; - posiciona lado a lado, à direita, inverte contagem.
+		 column; - alinham em posição de coluna;
+		 column-reverse; - alinhados de baixo para cima, inverte contagem.
+  	
+ flex-wrap: wrap; - as caixas se quebram em diversas linhas, a depender do espaço ocupado.
+
+ flex-flow: row-reverse wrap; - flex direction + flex wrap.
+
+			*justify-content -> só funciona em uma única linha, para mais de uma linha usar o "align-content" (mais abaixo);
+			-> Se flex-direction for padrão ou row, justify-content, alinha os itens horizontalmente e, align-content, verticalmente. Inverte se,  flex-direction for column.
+ justify-content: flex-end; - posicionamento no fim, reorganiza sem mudar ordem dos itens.
+		  center; - centraliza os itens.
+		  space-between; - insere espaços iguais para distribuir igualmente, os filhos, em toda a área.
+		  space-around; - insere espaços iguais para distribuir igualmente, os filhos, em toda a área, incluindo as bordas externas. tudo dentro do pai. nesse entre filhos ficam maiores que as partes externas.
+		  space-evenly; - insere espaços para distribuir igualmente, os filhos, em toda a área, incluindo as bordas externas. tudo dentro do pai. ambas as partes igualizadas.
+
+ align-itens: flex-start; - posicionamento vertical. todos no inicio (em cima a esquerda). cada filho da altura do seu conteudo.
+	      flex-end; - posicionamento vertical. todos no fim (em baixo a esquerda). cada filho da altura do seu conteudo.
+	      center; - posicionamento vertical. todos no centro. cada filho da altura do seu conteudo.
+
+	com o flex-wrap: wrap; ativado -> que quebra em mais de uma linha.
+ align-content: stretch; - vem por padrão. tem como pré-requisito, mais de uma linha para funcionar (ativado no wrap) ocupa toda área na vertical.
+		flex-start; alinha todos na parte de cima;
+		center;
+		flex-end; alinh no fim.
+		space-between; - insere espaços iguais para distribuir igualmente, os filhos, em toda a área. distribuição vertical.
+		space-around; - insere espaços iguais para distribuir igualmente, os filhos, em toda a área, incluindo as bordas externas. tudo dentro do pai. nesse entre filhos ficam maiores que as partes externas.  distribuição vertical.
+		space-evenly; - insere espaços para distribuir igualmente, os filhos, em toda a área, incluindo as bordas externas. tudo dentro do pai. ambas as partes igualizadas.  distribuição vertical.
+
+
+ 
+}
+
+.filho {
+}
+
+.filho:nth-child(1 /* o numero de id do filho */) {
+ order: 1; /* a ordem que se quer */- define em que posição irá encontrar os filhos dentro do espaço do pai. Todos os filhos precisam ser numerados.
+
+ flex-grow: 2; - altera tamanho daquele filho em relação aos outros, sem alteração é 0 (zero). se todos os filhos tiverem a mesma numeração, todos vão ocupar o espaço para preenchimento na horizontal. Se colocado 2, será tamanho em dobro e por aí vai.
+
+ flex-shrink: 1; - por padrão é 1 (um), diminuem ao serem apertadas. se colocado 1, mantem seu tamanho original. quanto maior o numero maismais rápido esse filho irá dimunir.
+
+ flex-basis: 100px; - por padrão vem auto. define o tamanho do filho.
+
+ flex: 2 1 100px; - resume (soma) flex-grow + flex-shrink + flex-basis.
+
+ align-self: flex-end; - esse filho irá se posicionar na vertical de acordo à nova definição, diferenciando dos outros em seu entorno.
+
+} 
+
+
+GRID-LOYOUT
+
+sempre precisa ser ativado no pai: display:grid;
+
+.pai {
+ display:grid;
+ grid-template-columns: 100px 100px 50px; - quantidade de preenchidos define quantidade de colunas (no exemplo: são 3 colunas)
+ grid-gap: 10px; - espaço do grid, entre uma coluna e linha e outra.
+}
+
+.pai {
+ column-count: 2; - quantidade de colunas de textos, por exemplo.
+}
+
+
+RESPONSIVIDADE
+
+MEDIA QUERIES
+
+@media (max-width: 600px) {
+
+}
+
+@media (orientation: landscape) {} - orientação da tela. deitado
+
+
+
+
+
+
+
+
 
 
 
