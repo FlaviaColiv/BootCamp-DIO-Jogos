@@ -549,4 +549,29 @@ STATE - Modificado dos nossos elementos. Ex: quando um botao esta com foco, etc.
 THEME - Geralmente ficam cores dos temas, tipos de fontes e etc. Usada apenas quando temos mais de uma opçã de tema no nosso site. Ex: tema claro, tema escuro etc.
 
 
+FRAMEWORKS
 
+Ferramentas que disponibilizam funcionalidades pré-prontas.
+Diversos componetes já prontos.
+Classes que ajudam a montar layouts com rapidez.
+
+PRÉ-PROCESSADORES.
+
+Cada um deles tem suas proprias regras para escrevermos o CSS
+Funcionalidades a mais que dão mais poder ao nosso CSS
+No final de tudo entrega um unico CSS para o navegador poder exibir nossa pagina corretamente.
+
+Sass e Styles.
+
+LINT - TESTE DE QUALIDADE
+
+
+
+RESET CSS ou NORMALIZECSS
+
+Adiciona os mesmo principios para todos os navegadores.
+
+
+
+
+.
