@@ -195,6 +195,125 @@ li {
 }
 
 
+OBJECT-FIT 
+	ajuste de objeto, ajusta imagem ou video para caber em um container.
+	object-fit: contain; - cabe dentro da área definida e mantém as proporções originais da imagem;
+		    fill; - distorce a imagem de acordo as proporções da área definida.
+		    cover; - preencher a área e corta os excedentes, se pequena repete.
+		    none; - mantem tamanho original e corta excedentes ou deixa espaços vazio, ignorando o objeto pai.
+		    scale-down; - das configurações anteriores qual a escala menor.
+
+OBJECT-POSITION
+	especificar como deve ser posicionado. horizontal vertical
+	object-position: eixoHorizontal eixoVertical;
+
+FUNDO DOS ELEMENTOS - ALTERAÇÃO
+	background-image: url( ), url( ); - adiciona uma imagem ao fundo.
+			  linear-gradient(corInicial, corFinal, ... ); - cor em gradiente no fundo (reta vertical), tem possibilidade de aumentar;
+			  radial-gradiente(corInicial, corFinal, ... ); cor em gradiente no fundo (circular centro),
+			  radial-gradiente-repeat(corInicial posiçãoInicio posiçãoFinal, cor2 posiçãoInicio posiçãoFinal, ... ); podendo se tornar listras na horizontal
+
+Site: CSS3 Patterns Gallery - tem efeitos já definidos de fundo em CSS.
+
+
+	background-size: ; - definição do tamalho dessa imagem de fundo.
+			auto; - padrão; 
+			cover; - cobrir; ocupa todo o fundo do elemento, se pequena ela repete e grande corta.
+			contain; - todo o conteudo da imagem;
+			eixox eixoy;
+			imagem1, imagem2; - se mais de uma imagem, configurações de cada uma separadas por virgulas.
+			
+	background-repeat: ; - definir sobre a repetição (ou não) da imagem de fundo;
+			  repeat; - repete em todas as direções, vem por padrão, corta os canto excedentes
+			  repeat-x; - repete horizontalmente;
+			  repeat-y; - repete verticalmente.
+			  space; - repete nos eixos x e y, sem cortar imagem e espeços em brancos nos espaços;
+			  round; - repete nos eixos x e y, elas são redimensionadas;
+			  no-repeat; sem repetições.
+			  x y;
+
+	background-position: ; - definir posicionamento da imagem. (center, top, botton, left, right ou em unidades de medida)
+
+	background-attachment: ; - como fundo do vai se movimentar;
+			      fixed; - fixa mesmo se rolar página.
+			      scroll; - rola junto com o scroll da pagina.
+			      local; - rola junto com o elemento, mas fixa na pagina
+
+
+
+
+PSEUDO-SELETOR (CSS)
+
+.exemplo:hover {} - só irá ocorrer quando passar o mouse em cima.
+.exemplo:focus {} - ativa quando estiver focado (com tab).
+.exemplo:active {} - será ativado quando clicar no elemento, ou quando estiver sendo ativado, com enter.
+
+em uma lista
+.li:first-child {} - primeiro item irá receberá as regras
+.li:alst-child {} - ultimo elemento.
+.li:nth-child(1) {} - irá funcionar na posição que foi passada. ou posição impar (odd) ou posição par (even).
+
+PSEUDO-ELEMENTO (CSS)
+
+.exemplo::after {} - cria mais um elemento após o elemento selecionado (de exemplo)
+.exemplo::before {} - cria antes.
+
+
+FONTE "REDRESSED" - do google fontes. 
+
+
+PROPRIEDADE DISPLAY
+
+display: block; - ocupa a largura inteira, como um bloco.
+	 inline; - outros elementos podem ficar ao lado desse, a largura de seu contéudo.
+	 inline-block; - elementos ao redor respeitam inline, mas, consegue as propriedades de altura e largura, adiciona o block ao final.
+	 none; - o conteúdo não aparece na página.
+
+
+POSICIONAMENTO
+
+position: static; - vem como padrão, não obedece comandos de posicionamento.
+	  relative; - obdece os comando de posição;
+	  absolute; - irá se posicionar na tela ignorando todos os outros elementos.
+	  fixed; - semelhante ao absolut, mas, fica fixo na página.
+
+z-index: nº; - por padrão vem 0 (zero), mas, ao escrever um numero o posiciona por cima dos elementos menores.
+
+
+ESPAÇAMENTO	
+
+margin: 10px;
+padding: 10px;
+box-sizing: border-box; - terá a largura e altura finais de acordo ao que programamos em height e width, mesmo alterando margin e padding.
+	    content-box; - soma todas as alterações, mudando o tamanho final.
+
+OUTROS ESTILOS 
+
+border-widht: 1px;
+border-style: solid;
+border-color: green;
+=
+border: 1px solid green;
+
+border-radius: 10px; - bordas arrendodas (top-left top-right button-right button-left); 
+
+box-shadow: 5px 5px grey; (horizontal vertical cor) ou (eixoX eixoY disfoque propagação cor)
+
+cursor: help; - aparece uma interrogação no local do mouse.
+	pointer; - uma mãozinha.
+
+outline: none; - não vai aparecer
+
+float: left; - flutuação, posição nesse caso a esquerda dos outros elementos.
+
+overflow: hidden; - conteúdo maior que a caixa de referência sumisse;
+	  scroll; - adiciona barra de elemento sem ultrapassar tamanho da caixa de referencia.
+
+
+
+
+
+
 
 
 
