@@ -1,1 +1,10 @@
-As anotações que serão feitas quando iniciar o módulo de JS.
+JAVASCRIPT
+ Linguagem de script para controlar e criar conteúdo dinâmico de um site, sem que seja necessário recarregar a página toda vez que algo mudar.
+
+FrameWork - sem framework nesse curso
+
+React
+Angular
+Svelt
+Veel
+
