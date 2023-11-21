@@ -8,3 +8,222 @@ Angular
 Svelt
 Veel
 
+VARIÁVEIS
+
+var xxx = yyy;
+
+let - usa dentro de condicionais. pode ser restringido dentro de um bloco, pode ser usado diversas vezes
+
+const - usar dentro de function.
+
+
+DADOS
+
+Strings - termos em geral
+Number
+Boolean - usado para tomada de decisão.
+Symbol
+Object - 
+Underfined - representa um valor que não tem atribuição à ele.
+Null - significa vazio, diferente de zero.
+Bigint - dado (numero) muito grande, adicionar ao fim a letra 'n'.
+
+Para saber o tipo de DADO digitar: (typeof xxx)
+
+== comparação de igual a; resultado booleano.
+!= retorna falso
+=== comparação de tipo de DADO de igual a = true ou false
+&& 	e
+|| 	ou
+! 	Não
+
+OPERADORES
+
+ARITMÉTICOS
+
+console.log(num1); // 20
+console.log(++num1); //soma e muda a variável
+console.log(num1++); //soma, muda a variável, mas não apresenta no console a mudança, porém mostra a última alteração. O mesmo nas subtrações.
+console.log(num1--);
+console.log(--num1);
+console.log(--num1);
+
+LÓGICOS
+
+//Operador And && - tende ao falso
+
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+//Operador Or || - tende ao verdadeiro
+
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true);  // true
+console.log(false || false); // false
+
+//Operador Diferente !=
+
+console.log(true != true); // false
+console.log(true != false); // true
+console.log(false != true); // true
+console.log(false != false); // false
+
+
+DECLARAÇÃO CONDICIONAL
+
+? verifica se a condição é verdadeira
+: verifica se a condição é falsa
+
+if (condição) {
+ retorna se condição verdadeira
+} else {
+ retorna se condição falso
+};
+
+ |
+ V
+
+pode ser feito -> 
+let xxx = condição ? 'retorna se condição verdadeira' : 'retorna se condição falsa'
+
+let idade = 18;
+let podeDirigir = idade > 18 ? 'Sim, pode dirigir.' : 'Ainda não, espere chegar aos 18 anos.'
+console.log(podeDirigir);
+
+
+switch(expressão) {
+ case 1:
+  código caso 1 - se verdadeiro cumpre esse caso
+  break;
+ case 2:
+  código caso 2
+  break;
+ default: //nenhum dos casos anteriores
+  código default
+}
+
+Exemplo: 
+const ceu = "azul";
+
+switch (ceu) {
+  case "cinza":
+    console.log("Vou preparar o guarda-chuva.")
+    break;
+  case "azul":
+    console.log("Vai dar praia. Oba!!!")
+    break;
+
+  default:
+    console.log("Procure uma dica.")
+    break;
+};
+
+OUTRO EXEMPLO
+
+let qualDataHoje = new Date();
+
+switch (qualDataHoje.getDay()) {
+  case 0:
+    console.log('Hoje é Domingo.')
+    break;
+  case 1:
+    console.log('Hoje é Segunda-feira.')
+    break;
+  case 2:
+    console.log('Hoje é Terça-feira.');
+    break;
+  case 3:
+    console.log('Hoje é Quarta-feira.');
+    break;
+  case 4:
+    console.log('Hoje é Quinta-feira.');
+    break;
+  case 5:
+    console.log('Hoje é Sexta-feira.');
+    break;
+  case 6:
+    console.log('Hoje é Sábado.');
+    break;
+  default:
+    console.log('Nenhuma data relacionada foi encontrada!')
+    break;
+};
+
+
+LAÇO DE EXECUÇÃO
+
+let i = 1;
+while (i < 10) {
+ console.logo(i);
+ i++; //mesmo que i = i + i
+}
+
+TAMBÉM
+
+do {
+ //bloco de código a ser executado
+}
+while (condição); // enquanto for verdadeiro executa o do
+
+exemplo:
+
+let i = 0;
+do {
+  console.log(i);
+  i++;
+}
+while (i <= 10);
+
+
+CONTROLE DE FLUXO - LAÇO FOR
+
+for (declaração 1; declaração 2; declaração 3) {
+ //bloco de código a ser executado
+}
+
+exemplo
+
+let numeros = [1, 2, 3];
+
+for (let i = 0; i <= 10; i++) {
+  console.log('O número é ...: ', i)
+};
+
+outro exemplo:
+
+let frutas = ["Banana", "Maçã", "Manga", "Laranja", "Abacaxi" ];
+
+for (let i = 0; i < frutas.length; i++) {
+  console.log('A fruta é ... ', frutas[i])
+}
+
+ARRAYS
+Lista de Objetos
+
+pop() - remove o ultimo elemento do array
+push() - adiciona novo elemento ao final do array
+shift() - remove o primeiro elemento do array e desloca todos os elementos para o indice inferior.
+unshift() - adiciona um array ao inicio e move os antigos.
+join() - junta todos os array em um única string
+slice() - separa em novo array
+concat() - concatena, criando uma nova matriz de arrays.
+lenght - anexar novo elemento e a informa a quantidade
+indexOf() - procura o elemento do passado e diz a posição
+lastIndexOf() - mostra a ocorrencia (quantidade de vezes que repetiu)
+
+
+forEach() - chama uma função para cada elemento da matriz.
+map() - mapeamento de objetos no array.
+filter() - criar uma nova matriz selecionado pelo filtro.
+reduce()
+every()
+some()
+find()
+findIndex()
+
+
+
+
