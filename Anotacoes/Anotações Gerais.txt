@@ -213,8 +213,9 @@ FUNDO DOS ELEMENTOS - ALTERAÇÃO
 			  radial-gradiente(corInicial, corFinal, ... ); cor em gradiente no fundo (circular centro),
 			  radial-gradiente-repeat(corInicial posiçãoInicio posiçãoFinal, cor2 posiçãoInicio posiçãoFinal, ... ); podendo se tornar listras na horizontal
 
+*****
 Site: CSS3 Patterns Gallery - tem efeitos já definidos de fundo em CSS.
-
+*****
 
 	background-size: ; - definição do tamalho dessa imagem de fundo.
 			auto; - padrão; 
@@ -239,9 +240,36 @@ Site: CSS3 Patterns Gallery - tem efeitos já definidos de fundo em CSS.
 			      scroll; - rola junto com o scroll da pagina.
 			      local; - rola junto com o elemento, mas fixa na pagina
 
+	background-origin: padding-box; - valor padrão, a borda ocupa área do padding, mais proximo da imagem.
+			   border-box; - a borda da imagem é coberta.
+			   content-box; - a borda cobre fora do padding.
+
+	background-clip: onde preeenche o fundo, padding-box; ou border-box; ou content-box; 
+			 text;- text so preenche o fundo do texto com a imagem de fundo, para funcionar adicionar antes: 
+					-webkit-background-clip: text;
+					color: transparent;
+					background-clip: text;
+
+	mesclar cores e imagens no fundo
+	background-blend-mode: normal; - por padrão.
+			       multiply; - imagem de fundo com cor de fundo.
+ 			       screen; - meio de transparencia.
+			       overlay; - sobrepoe cor sobre a imagem,mas mesclando.
+			       darken;
+			       lighten;
+			       color-dodge;
+			       color-burn;
+			       hard-light;
+			       exclusion;
+			       difference;
+			       luminosity;
 
 
-
+Exemplo
+	   /* background: 
+        /*image*/ url(https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg) /*position / size */ top center / 300px 200px /*repeat*/ no-repeat /*attachment*/ fixed /*origin*/ padding-box /*clip*/ content-box /*color*/ var(--cor-fundo)
+    ; 
+______________________________________________________________________
 PSEUDO-SELETOR (CSS)
 
 .exemplo:hover {} - só irá ocorrer quando passar o mouse em cima.
@@ -570,6 +598,38 @@ LINT - TESTE DE QUALIDADE
 RESET CSS ou NORMALIZECSS
 
 Adiciona os mesmo principios para todos os navegadores.
+________________________________________________________________________
+
+BORDAS
+
+	border-width: ; - expessura da borda. Precisa definir o style para funcionar.
+		      thin; - borda fina == 1px
+		      medium; == 3px
+		      thick; == 5px
+		      10px 20px; - horizontal vertical
+		      10px 20px 10px 20px; - top left bottom right
+
+	      -style: solid; - preenche todo; pode ser aplicado mais de um tipo.
+		      dashed; - tachado.
+		      none; - vem por padrão.
+		      dotted; - varios pontos
+		      double; - linha dupla
+		      groove; - borda 3d
+		      ridge; - borda 3d invertido
+		      inset; - afundado
+		      outset; - impressão de elevação;
+
+	      -color: ; - altera as cores; - se não definir, segue a cor do texto (color). Pode definir múltiplas cores.
+
+	
+Exemplo
+	border: 15px dashed var(--cor-4);
+	border-top: ; - a posição, podendo mudar para as demais.
+	border-top-style: ;
+
+
+
+
 
 
 
