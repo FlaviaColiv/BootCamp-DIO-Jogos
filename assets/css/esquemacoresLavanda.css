@@ -1,0 +1,17 @@
+/*site de referencia: https://encycolorpedia.pt/d8bfd8 */
+
+:root {
+  --cor-principal: #e6e6fa ; /*lavanda*/
+
+  --cor-relacionada-1: #f8f8ff; /*branco fantasma*/
+  --cor-relacionada-2: #f0f8ff; /*azul alice*/
+  --cor-relacionada-3: #fff0f5; /*lavanda avermelhada*/
+  --cor-relacionada-4: #dcdcdc; /*cinza medio*/
+  --cor-relacionada-5:  #f5f5f5; /*branco fumaça*/
+
+  --cor-medianamente-relacionada-1: #d19275; /*feldspato*/
+  --cor-medianamente-relacionada-2: #5f9ea0; /*azul cadete*/
+  --cor-medianamente-relacionada-3: #1e90ff; /*azul furtivo*/
+  --cor-medianamente-relacionada-4: #32cd32; /*verde lima*/
+  --cor-medianamente-relacionada-5: #248eff; /*azul taparuere*/
+}

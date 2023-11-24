@@ -1,0 +1,45 @@
+/*site de referencia: https://encycolorpedia.pt/d8bfd8 */
+
+:root {
+  --cor-principal: #d8bfd8; /*cardo*/
+
+  --cor-relacionada-1: #c8a2c8; /*lilas*/
+  --cor-relacionada-2: #e0b0ff; /*malva*/
+  --cor-relacionada-3: #ffcbdb; /*rosa*/
+  --cor-relacionada-4: #dda0dd; /*ameixa*/
+  --cor-relacionada-5: #ffb6c1; /*rosa claro*/
+
+  --cor-medianamente-relacionada-1: #f4c430; /*açafrao*/
+  --cor-medianamente-relacionada-2: #7b68ee; /*azul ardosia medio*/
+  --cor-medianamente-relacionada-3: #8fbc8f; /*verde mar escuro*/
+  --cor-medianamente-relacionada-4: #f0dc82; /*couro*/
+  --cor-medianamente-relacionada-5: #daa520; /*dourado*/
+
+  --cor-complentar: #c1d6c2;
+
+  --cor-analoga-1: #bcbadd;
+  --cor-analoga-2: #e1b6c5;
+
+  --cor-dividir-1: #bcdbd2;
+  --cor-dividir-2: #d3d7c0;
+
+  --cor-triade-1: #b9dbde;
+  --cor-triade-2: #ddd0ba;
+
+  --cor-quadrado-1: #e3c5b4;
+  --cor-quadrado-2: #c1d6c2;
+  --cor-quadrado-3: #b3d5e4;
+
+  --cor-tretadico-1: #e4b6b3;
+  --cor-tretadico-2: #c1d6c2;
+  --cor-tretadico-3: #b9dbde;
+
+  --degrade-monocromatico-1: #b199b1;
+  --degrade-monocromatico-2: #bea6be;
+  --degrade-monocromatico-3: #cbb2cb;
+  --degrade-monocromatico-4: #d8bfd8;
+  --degrade-monocromatico-5: #e5cce5;
+  --degrade-monocromatico-6: #f3d9f3;
+  --degrade-monocromatico-7: #ffe6ff;
+
+}

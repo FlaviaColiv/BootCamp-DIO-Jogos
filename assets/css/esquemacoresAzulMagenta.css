@@ -1,0 +1,45 @@
+/*site de referencia: https://encycolorpedia.pt/d8bfd8 */
+
+:root {
+  --cor-principal: #9797FA; /*azul magenta*/
+
+  --cor-relacionada-1: #6495ed; /*azul flor de milho*/
+  --cor-relacionada-2: #248eff; /*azul taparuere*/
+  --cor-relacionada-3: #1e90ff; /*azul furtivo*/
+  --cor-relacionada-4: #8470ff; /*azul ardosia claro*/
+  --cor-relacionada-5: #9370db; /*purpura media*/
+
+  --cor-medianamente-relacionada-1: #d2691e; /*chocolate*/
+  --cor-medianamente-relacionada-2: #000080; /*naval*/
+  --cor-medianamente-relacionada-3: #78866b; /*verde militar*/
+  --cor-medianamente-relacionada-4: #f8f8ff; /*branco fantasma*/
+  --cor-medianamente-relacionada-5: #ff8c00; /*laranja escuro*/
+
+  --cor-complentar: #d5e0b1;
+  
+  --cor-analoga-1: #92daff;
+  --cor-analoga-2: #e3ace5;
+
+  --cor-dividir-1: #b3debc;
+  --cor-dividir-2: #e6d5ab;
+
+  --cor-triade-1: #92ffec;
+  --cor-triade-2: #f2be9f;
+
+  --cor-quadrado-1: #fc9595;
+  --cor-quadrado-2: #d5e0b1;
+  --cor-quadrado-3: #92f6ff;
+
+  --cor-tretadico-1: #f998bf;
+  --cor-tretadico-2: #d5e0b1;
+  --cor-tretadico-3: #92ffec;
+
+  --degrade-monocromatico-1: #7679d9;
+  --degrade-monocromatico-2: #8183e4;
+  --degrade-monocromatico-3: #8c8def;
+  --degrade-monocromatico-4: #9797fa;
+  --degrade-monocromatico-5: #a2a1ff;
+  --degrade-monocromatico-6: #adacff;
+  --degrade-monocromatico-7: #b8b6ff;
+
+}
