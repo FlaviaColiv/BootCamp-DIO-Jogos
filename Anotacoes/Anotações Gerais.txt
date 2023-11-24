@@ -628,6 +628,35 @@ Exemplo
 	border-top-style: ;
 
 
+	ARRENDODAR BORDAS
+	
+	      -radius: ; - aplica arrendodamento 
+		       20px 10px; - aplica (canto superior esquerdo e campor inferior direito) e (canto superior direito e campo inferior esquerdo).
+		       20px/10px; - lados deiferentes tamanhos em cada borda.
+
+	IMAGEM NA BORDA
+
+	border-image: ; - sua forma resumida, abaixo opções de uso. inicialmente coloca só nos cantos (nos quadrantes dos cantos).
+		    -source: ; - procura a imagem ou adiciona gradiente: exemplo, border-image-source: linear-gradient(var(--cor-1), var(--cor-5)).
+		    -widht: ; 
+		    -repeat: ;
+		    -outset: ;
+		    -slice: 100; - consegue dividir a imagem em regiões.
+
+Posição das bordas e fatias do -slice:
+ --- ------------- ---
+| 1 |      5      | 2 |
+ --- ------------- ---
+|   |             |   |
+| 8 |      9      | 6 |
+|   |             |   |
+ --- ------------- ---
+| 4 |      7      | 3 |
+ --- ------------- ---
+
+Posições 1; 2; 3 e 4 - só são usadas 1 vez.
+Posições 5; 6; 7 e 8 - podem ser usadas mais de uma vez e podem ser redimensionadas.
+Posição 9 - por padrão é uma fatia descartada, se colocado o valor fill, é colocado com fazendo parte.     border-image-slice: 100 fill;
 
 
 

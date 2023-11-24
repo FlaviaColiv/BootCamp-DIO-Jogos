@@ -1,0 +1,25 @@
+:root {
+  --cor-fundo: var(--cor-principal1);
+  --cor-borda: #BB228850;
+  --cor-letra: #90ee90;
+  --cor-1: #AA2299aa;
+  --cor-2: #ffaaff88;
+  --cor-3: #AA229988;
+  --cor-4: #8FF843;
+  --cor-5: #3C032C;
+
+  --cor-principal: #6795c7;
+  --cor-prateado: #E6E6FA;
+  --cor-de-fundo: #D8BFD8; /*CARDO*/
+  --cor-foco: #C9AECA;
+  --cor-detalhes: #FFE4B5;
+  --cor-detalhes-claro: #5F1130;
+
+  --cor-de-fundo-escura: #1C1C3B;
+  --cor-foco-escura: #5F4C6F;
+
+  --fonte-nome: 'Great Vibes', cursive;
+  --fonte-texto: 'Crimson Pro', serif;
+  --fonte-mensagem: 'Ephesis', cursive; /* mensagem especial */
+
+}

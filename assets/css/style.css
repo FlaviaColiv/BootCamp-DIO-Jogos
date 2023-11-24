@@ -1,30 +1,3 @@
-/* SELETOR DE TAG OU DE TIPO */
-
-:root {
-    --cor-fundo: #9B5FD473;
-    --cor-borda: #BB228850;
-    --cor-letra: #90ee90;
-    --cor-1: #AA2299aa;
-    --cor-2: #ffaaff88;
-    --cor-3: #AA229988;
-    --cor-4: #8FF843;
-    --cor-5: #3C032C;
-
-    --cor-principal: #6795c7;
-    --cor-prateado: #E6E6FA;
-    --cor-de-fundo: #D8BFD8; /*CARDO*/
-    --cor-foco: #C9AECA;
-    --cor-detalhes: #FFE4B5;
-    --cor-detalhes-claro: #5F1130;
-  
-    --cor-de-fundo-escura: #1C1C3B;
-    --cor-foco-escura: #5F4C6F;
-  
-    --fonte-nome: 'Great Vibes', cursive;
-    --fonte-texto: 'Crimson Pro', serif;
-    --fonte-mensagem: 'Ephesis', cursive; /* mensagem especial */
-  
-}
 
 div {
     margin-botton: 30px;
@@ -51,15 +24,26 @@ div {
 }
 
 .div__1 {
+    
     border-image-source: url('../image/teste/2dfe54edcbc5a97694e1e346a0dfa2fb.jpeg');
+    /* border-image-repeat: repeat; */
+    border-image-slice: 100 fill;
+    
 }
 
 .div__2 {
     border-image-source: linear-gradient(var(--cor-1), var(--cor-5));
+    border-image-slice: 10 fill;
 }
 
 .div__3 {
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
+}
+
+.div__4 {
+    border: 10px solid;
+    border-image-outset: 5;
+
 }

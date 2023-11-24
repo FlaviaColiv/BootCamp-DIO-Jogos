@@ -1,7 +1,8 @@
 /*site de referencia: https://encycolorpedia.pt/d8bfd8 */
 
 :root {
-  --cor-principal: #d8bfd8; /*cardo*/
+  --cor-principal1: #d8bfd8; /*cardo*/
+  --cor-letra: #3C032C;
 
   --cor-relacionada-1: #c8a2c8; /*lilas*/
   --cor-relacionada-2: #e0b0ff; /*malva*/
