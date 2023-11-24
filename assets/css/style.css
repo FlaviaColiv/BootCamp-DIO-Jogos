@@ -1,4 +1,9 @@
 @import url('./cor&fonte.css');
+@import url('./reset.css');
+
+* {
+    font-family: var(--fonte-texto);
+}
 
 
 div {
@@ -67,4 +72,15 @@ div {
 .div__5 {
     background: var(--cor-fundo);
     font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 4px;
+    text-shadow: 20px 20px 1px var(--cor-prateado);
+    
+}
+
+.div__p {
+    max-width: 500px;
+    margin-top: 50px;
+    border: 10px solid var(--cor-prateado);
+    box-shadow: 10px 25px 20px var(--cor-fundo) ;
 }

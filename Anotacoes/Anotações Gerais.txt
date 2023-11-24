@@ -695,11 +695,96 @@ FONTES
 		     lighter; -mais fino que o pai.
 		     bolder; -mais grossa que o pai.
 
-	    -variant:
+	    -variant: small-caps; - small caps - versalet - todas as letras maisculas, mas, menor que em caixa alta de fato.
+		      normal; -por padrão.
 
-	    -stretch:
+	    -stretch: ; - mais estreito ou mais expandido, a fonte precisa ter a configuração ativada.
+		      ultra-condensed;
+		      extra-condensed; ...
 
-	    -line-height:
+	line-height: 1.2; -espassamento acima e abaixo da linha. multiplica o tamanho da fonte pelo numero (ou porcentagem) colocado. Minimo indicado 1.5
+
+			RESUMIDO
+		font: italic small-caps bold 24px/2 Georgia, serif;
+__________________________________________________________________________
+
+TEXTOS DAS PÁGINAS
+
+	text-transform: none; -padrão. É RESPONSÁVEL por definir quais caracteres vão estar em maiúsculo, minúsculo, etc.
+			capitalize; -o primeiro caracter de cada palavra em maiusculo.
+			uppercase; -o texto totalmente em caixa alta.
+			lowercase; -tudo em minusculo.
+			inicial; - ==none
+			inherit; -herda do elemento pai;
+
+	    -align: justify; -alinha na horizontal.
+
+	    -decoration: none; -retirar sublinhado do link
+			 urderline; -sublinha 
+			 line-through; -risca o testo ao meio.
+			 overline; -linha acima do texto.
+			
+			-line: ;-qual o tipo de linha pode ser adicionada ao texto.
+			-style: ; -formato da linha (solid, double, wavy [ondinhas] etc)
+			-color: ; -cor da linha.
+			-thickness: ; -a espessura da linha criada.
+
+	    -ident: ; -definir recuo do inicio do texto (valores positivos e negativos).
+
+	letter-spacing: ; -espaçamento entre cada caractere
+	word-spacing: ; -espaçamento entre cada palavra
+
+	white-space: normal; -como os espaços em branco do texto vão se comportar.
+		     nowrap; -sem quebra de linha, ignora a formatação de limite.
+		     pre; -preservado os espaços em branco como foram digitadas, ignirando largura máxima.
+		     pre-line; -respeita quebra de texto digitado.
+		     pre-wrap; -espaços em branco preservados, mas, quebra de linha normal.
+		     break-spaces; -semelhante ao pre-wrap, mas, quebra linha dos espaçamentos, tb.
+
+	word-wrap: break-word; -quebra a palavra quando necessário. Só quebra linha em palavras grandes
+
+	    -break: break-all; -quebra a palavra em qualquer caracter e mantenha limite de espaçamento. Diferença do de cima: quebra em qualquer tamanho de palavra
+		    keep-all; -se for linguagem oriental, o texto não deve ser quebrado, nunca. Qualquer outro idioma funciona normal.
+
+	writing-mode: horizontal-tb; -valor padrão. orientação do texto;
+		      vertical-rl; linha-rl = right-left. (tudo em pé)
+		      vertical-lr; linha-lr = left-right.
+
+	text-overflow: clip; -como mostra para o usuario se tem continuidade de texto. clip = padrão. corta o texto
+		       ellipsis; -adiciona os '...' que tem mais texto, 
+		       string; -no funciona no firefox.
+
+__________________________________________________________________________
+
+SOMBRAS
+				-> mais de uma sobra, separa os conjuntos de comandos com ',' (vírgula).
+	box-shadow: posiçãoHorizontalRight posiçãoVerticalBottom desfoque propagaçãoSombra cor; -sombra externa.
+		    inset .... ; -sombra interna, escreve inset antes das configurações.
+
+	filter: drop-shadow(... configurações para shadow); -sobra nos elementos em imagens de fundo transparente. (ele aplica sobra a sobra de box-shadow.
+
+	SOMBRA EM LETRAS
+
+	text-shadow: posiçãoHorizontalRight posiçãoVerticalBottom desfoque cor; -sem aplicar cor replica a cor da propria letra e não tem inset.
+			 
+
+TRANSPARÊNCIA
+
+	opacity: ; -de 0 até 1.
+
+ 
+
+BARRA DE ROLAGEM
+
+	overflow: visible; -padrão, sem corte.
+		  hidden; -corta resto do conteudo.
+		  scroll; -cria a barra de rolagem para itens que ultrapassar.
+		  auto; -a barra de rolagem só será adiciona se ultrassar o tamanho da caixa;
+ 
+		-y: ; -eixo vertical
+		-x: ; -eixo horizontal
+
+
 
 
 .
