@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,400;0,800;0,900;1,200;1,400;1,800;1,900&family=Ephesis&family=Fredericka+the+Great&family=Great+Vibes&family=Libre+Barcode+39+Text&family=Love+Ya+Like+A+Sister&family=Montez&family=Rubik+Dirt&family=Special+Elite&family=Style+Script&display=swap');
+
+@import url('./esquemacoresCardo.css');
+/* @import url('./esquemacoresAzulMagenta.css'); */
+/* @import url('./esquemacoresLavanda.css'); */
+
+
+
 :root {
-  --cor-fundo: var(--cor-principal1);
+  --cor-fundo: var(--cor-principal);
   --cor-borda: #BB228850;
   --cor-letra: #90ee90;
   --cor-1: #AA2299aa;
@@ -8,12 +16,12 @@
   --cor-4: #8FF843;
   --cor-5: #3C032C;
 
-  --cor-principal: #6795c7;
+  /* --cor-principal: #6795c7; */
   --cor-prateado: #E6E6FA;
   --cor-de-fundo: #D8BFD8; /*CARDO*/
   --cor-foco: #C9AECA;
   --cor-detalhes: #FFE4B5;
-  --cor-detalhes-claro: #5F1130;
+  --cor-detalhes-claro: #5F1130; 
 
   --cor-de-fundo-escura: #1C1C3B;
   --cor-foco-escura: #5F4C6F;
@@ -21,5 +29,15 @@
   --fonte-nome: 'Great Vibes', cursive;
   --fonte-texto: 'Crimson Pro', serif;
   --fonte-mensagem: 'Ephesis', cursive; /* mensagem especial */
+  --fonte-1: 'Fredericka the Great';
+  --fonte-2: 'Montez';
+  --fonte-3: 'Ephesis';
+  --fonte-4: 'Libre Barcode 39 Text';
+  --fonte-5: 'Love Ya Like A Sister';
+  --fonte-6: 'Rubik Dirt';
+  --fonte-7: 'Special Elite';
+  --fonte-8: 'Style Script';
+  
+
 
 }

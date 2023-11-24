@@ -1,3 +1,5 @@
+@import url('./cor&fonte.css');
+
 
 div {
     margin-botton: 30px;
@@ -10,7 +12,7 @@ div {
     padding: 30px;
     font-size: 100px;
     font-weight: 900;
-    font-family: var(--fonte-nome);
+    font-family: var(--fonte-2);
     text-align: center;
 
     /* background: 
@@ -44,6 +46,25 @@ div {
 
 .div__4 {
     border: 10px solid;
-    border-image-outset: 5;
+    border-image-source: linear-gradient(var(--cor-1), var(--cor-5));
+    border-image-slice: 10;
+    border-image-outset: 30px;
 
+}
+
+.exemplo2 {
+    width: 300px;
+    height: 300px;
+    color: var(--cor-5);
+    padding: 30px;
+    font-size: 7rem;
+    font-weight: 900;
+    font-family: var(--fonte-8);
+    text-align: center;
+    border: 10px solid var(--degrade-monocromatico-1);
+}
+
+.div__5 {
+    background: var(--cor-fundo);
+    font-weight: 100;
 }

@@ -639,8 +639,8 @@ Exemplo
 	border-image: ; - sua forma resumida, abaixo opções de uso. inicialmente coloca só nos cantos (nos quadrantes dos cantos).
 		    -source: ; - procura a imagem ou adiciona gradiente: exemplo, border-image-source: linear-gradient(var(--cor-1), var(--cor-5)).
 		    -widht: ; 
-		    -repeat: ;
-		    -outset: ;
+		    -repeat: ; - trabalah com os cantos 5; 6; 7 e 8. round = repete e recimenciona.
+		    -outset: ; - distancia das bordas em relação a imagem de referência.
 		    -slice: 100; - consegue dividir a imagem em regiões.
 
 Posição das bordas e fatias do -slice:
@@ -658,9 +658,48 @@ Posições 1; 2; 3 e 4 - só são usadas 1 vez.
 Posições 5; 6; 7 e 8 - podem ser usadas mais de uma vez e podem ser redimensionadas.
 Posição 9 - por padrão é uma fatia descartada, se colocado o valor fill, é colocado com fazendo parte.     border-image-slice: 100 fill;
 
+		RESUMIDO
+		border-image: caminho definirSlice / larguraImagem / outset repetição;
+_________________________________________________________________________
+
+FONTES
 
 
+@font-face {
+  font-family: Roboto;
+  src: url();
+  font-we
+}
 
+	font-family: ;
+	    -weight: normal;
+		     bold;
+		     lighter;
+
+	    -size: xx-small; -bem pequeno
+		   x-small;       |
+		   small;         |
+		   medium;        |
+		   large;         |
+		   x-large;       |
+		   xx-large; -bem grande
+		   larger; - maior que o elemento pai;
+		   smaller; - menor que o elemento pai;
+
+	    -style: normal;
+		    italic;
+		    oblique; - italico menos usado.
+
+	    -weight: normal; - quão grossa a espessura da letra. Aceita valores de 100 até 900.
+		     bold;
+		     lighter; -mais fino que o pai.
+		     bolder; -mais grossa que o pai.
+
+	    -variant:
+
+	    -stretch:
+
+	    -line-height:
 
 
 .
