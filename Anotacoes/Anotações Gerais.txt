@@ -785,6 +785,11 @@ BARRA DE ROLAGEM
 		-x: ; -eixo horizontal
 
 
+RESET 
+
+http://meyerweb.com/eric/tools/css/reset/ 
+
+-webkit ..: text;
 
 
 .
