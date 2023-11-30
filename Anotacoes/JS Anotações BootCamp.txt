@@ -1,0 +1,68 @@
+JAVA SCRIPT
+
+	VARIÁVEIS E OPERADORES
+
+verficação de Node : node -v
+
+para executar no console:
+	node arquivo.js
+
+Para aparecer no terminal: 
+
+	console.log( ... );
+Se texto, entre ("aspas");
+
+VARIÁVEIS
+	são espaços para guardar valores.
+
+	let variável = valor; - pode mudar o valor.
+	const variável = valor; - não consegue mudar valor posteriormente.
+
+ARRENDODAMENTO
+
+Converter em String
+	(variável.toFixed(2)); - limite a 2 dígistos após a virgula.
+	
+	ESTRUTURAS CONDICIONAIS
+
+			condicionais com resposta booleana.
+			quando criada uma variável com resposta booleanda, inicia seu nome em 'is'.
+if (variável ou condicional) { 
+ executa se verdadeiro, e ignora o restante, se falso, ignora esse e pula pros próximos.
+} else if (variável) { 
+ segunda opção que executa se verdadeiro
+} else {
+ executa se falso
+};
+
+		EXEMPLO: 
+
+const etanol = 5.90;
+const gasolina = 7.00;
+const kmL = 10;
+
+const distancia = 900;
+const tipoCombustivel = gasolina;
+
+const gastoKm = tipoCombustivel / kmL;
+let gastoTotal = gastoKm * distancia;
+
+// console.log(gastoTotal.toFixed(2));
+
+if (tipoCombustivel == etanol) {
+  console.log("Consumirá: R$" + (gastoTotal.toFixed(2)) + " de Etanol ao longo de " + distancia + "km.");
+} else {
+  console.log("Consumirá: R$" + (gastoTotal.toFixed(2)) + " de Gasolina ao longo de " + distancia + "km.");
+};
+
+
+_____________________________________________________________________________________________
+
+MATEMÁTICA
+
+const imc = peso / Math.pow(altura, 2); - nesse caso, elevado à 2.
+_____________________________________________________________________________________________
+
+FUNÇÕES
+
+
