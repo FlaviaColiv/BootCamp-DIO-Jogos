@@ -1,66 +1,70 @@
-console.log("********** COMBUSTÍVEL **********")
+console.log("******** CÁLCULO DE IMS ********")
 
-const etanol = 5.90;
-const gasolina = 7.00;
-const kmL = 10;
-
-const distancia = 900;
-const tipoCombustivel = gasolina;
-
-const gastoKm = tipoCombustivel / kmL;
-let gastoTotal = gastoKm * distancia;
-
-// console.log(gastoTotal.toFixed(2));
-
-if (tipoCombustivel == etanol) {
-  console.log("Consumirá: R$" + (gastoTotal.toFixed(2)) + " de Etanol ao longo de " + distancia + "km.");
-} else {
-  console.log("Consumirá: R$" + (gastoTotal.toFixed(2)) + " de Gasolina ao longo de " + distancia + "km.");
+function calcularImc(peso, altura) {
+  return peso / (Math.pow(altura, 2));
 };
 
-console.log("********** CÁLCULO DE IMC **********")
-
-const peso = 80;
-const altura = 1.75;
-const imc = peso / Math.pow(altura, 2);
-
-let msg = "Seu IMC é: " + imc.toFixed(0) + ". Você está com ";
-
-if (imc < 18.5) {
-  console.log("Abaixo do peso");
-} else if (imc >= 18.5 && imc < 25) {
-  console.log(msg + "Peso normal.");
-} else if (imc >= 25 && imc < 30) {
-  console.log(msg + "Acima do peso.");
-} else if (imc >= 30 && imc < 40) {
-  console.log(msg + "Obeso!")
-} else {
-  console.log(msg + "Obesidade Grave!")
+function classificarImc(imc) {
+  if (imc < 18.5) {
+    return 'Abaixo do peso.';
+  } else if (imc >= 18.5 && imc < 25) {
+    return 'Peso normal.';
+  } else if (imc >= 25 && imc < 30) {
+    return 'Acima do peso.';
+  } else if (imc >= 30 && imc < 40) {
+    return 'Obeso.';
+  } else {
+    return 'Obesidade Grave!!!';
+  };
 };
 
-console.log("********** VALOR DO PRODUTO **********")
+function main () {
+  const peso = 72;
+  const altura = 1.65;
 
-/*
-
-1 - Débito
-2 - Dinheiro ou Pix
-3 - Em duas vezez
-4 - Acima de duas vezes */
-
-const valor = 100;
-const formaPagamento = 1;
-
-const debito = 0.1;
-const pix = 0.15;
-const maisVezes = 0.1;
-
-if (formaPagamento === 1) {
-  console.log((valor - (valor * debito)).toFixed(2));
-} else if (formaPagamento === 2) {
-  console.log((valor - (valor * pix)).toFixed(2));
-} else if (formaPagamento === 3) {
-  console.log(valor.toFixed(2));
-} else {
-  console.log((valor + (valor * maisVezes)).toFixed(2));
+  const imc = calcularImc(peso, altura);
+  console.log(classificarImc(imc));
 };
 
+main();
+
+console.log("******** IDENTIFICAÇÃO ********")
+
+function escreverMeuNome(nome) {
+  return('Meu nome é ' + nome);
+};
+
+function maiorDeIdade (idade) {
+  if (idade >= 18) {
+    return('e sou maior de idade!');
+  } else {
+    return('e sou menor de idade.');
+  };
+};
+
+function pessoa (nome, idade) {
+  console.log(escreverMeuNome(nome), maiorDeIdade(idade));
+}
+
+pessoa('Flavia', 34)
+
+console.log("******** CÁLCULO DE PREÇO ********")
+
+function criarDesconto (desconto) {
+  return (valor - (((valor * desconto)/100)));
+};
+
+function modoDePagamento (modo) {
+  if (modo === 1) {
+    return (valor - (criarDesconto(10)));
+  } else if (modo === 2) {
+    return valor - (criarDesconto(15));
+  } else if (modo === 3) {
+    return valor;
+  } else {
+    return valor + (criarDesconto(10));
+  };
+};
+
+console.log(criarDesconto(100, 10));
+console.log(modoDePagamento(1));

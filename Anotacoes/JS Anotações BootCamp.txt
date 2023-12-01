@@ -65,4 +65,37 @@ ________________________________________________________________________________
 
 FUNÇÕES
 
+Pequeno trecho de código que podemos invocar a qualquer momento.
 
+	CRIA
+	function nome(parâmetro) {
+	};
+
+	INVOCA
+	nome();
+
+
+	EXEMPLO:
+		function digaMeuNome(nome) {
+  		  console.log("Seu nome é: " + nome);
+		};
+
+		digaMeuNome("Flávia");
+		digaMeuNome("Oliveira");
+
+		Aparece:
+			Seu nome é: Flávia
+			Seu nome é: Oliveira
+
+	OUTRO EXEMPLO
+
+		function juros (valor, percentualJuros) {
+  		  const valorDeAcrescimo = (percentualJuros / 100) * valor;
+  		  return valor + valorDeAcrescimo;
+		};
+
+		console.log(juros(100, 10));
+
+
+
+.
