@@ -51,20 +51,21 @@ pessoa('Flavia', 34)
 console.log("******** CÁLCULO DE PREÇO ********")
 
 function criarDesconto (desconto) {
-  return (valor - (((valor * desconto)/100)));
+  return ((valor * desconto)/100);
 };
+
+const valor = 100;
 
 function modoDePagamento (modo) {
   if (modo === 1) {
     return (valor - (criarDesconto(10)));
   } else if (modo === 2) {
-    return valor - (criarDesconto(15));
+    return (valor - criarDesconto(15));
   } else if (modo === 3) {
     return valor;
   } else {
-    return valor + (criarDesconto(10));
+    return (valor + (criarDesconto(10)));
   };
 };
 
-console.log(criarDesconto(100, 10));
 console.log(modoDePagamento(1));

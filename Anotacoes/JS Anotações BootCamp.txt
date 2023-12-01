@@ -35,7 +35,7 @@ if (variável ou condicional) {
  executa se falso
 };
 
-		EXEMPLO: 
+		EXEMPLO 2: 
 
 const etanol = 5.90;
 const gasolina = 7.00;
@@ -65,7 +65,8 @@ ________________________________________________________________________________
 
 FUNÇÕES
 
-Pequeno trecho de código que podemos invocar a qualquer momento.
+Pequeno trecho de código que podemos invocar a qualquer momento. São valores também. 
+Ajuda a isolar um código.
 
 	CRIA
 	function nome(parâmetro) {
@@ -95,6 +96,77 @@ Pequeno trecho de código que podemos invocar a qualquer momento.
 		};
 
 		console.log(juros(100, 10));
+FUNÇÃO ANÔNIMA
+
+(function () {
+  ....
+}) ();
+		sem nome () e já chama na própria função (); serve para funções que se quer chamar uma única vez.
+
+O main é onde fica o código principal, as outras funções com outros nomes.
+_________________________________________________________________________________________
+
+Exemplo: 
+
+function maiorDeIdade (idade) {
+  if (idade >= 18) {
+    console.log('Você é maior de idade!');
+  } else {
+    console.log('Você é menor de idade.');
+  };
+
+};
+
+maiorDeIdade(18);
+____________________________________________________________________________________________
+
+Função dentro de outra função
+
+function escreverMeuNome(nome) {
+  return('Meu nome é ' + nome);
+};
+
+function maiorDeIdade (idade) {
+  if (idade >= 18) {
+    return('e sou maior de idade!');
+  } else {
+    return('e sou menor de idade.');
+  };
+};
+
+function pessoa (nome, idade) {
+  console.log(escreverMeuNome(nome), maiorDeIdade(idade));
+}
+
+pessoa('Flavia', 34)
+
+EXEMPLO
+
+console.log("******** CÁLCULO DE PREÇO ********")
+
+function criarDesconto (desconto) {
+  return (((valor * desconto)/100));
+};
+
+const valor = 100;
+
+function modoDePagamento (modo) {
+  if (modo === 1) {
+    return (valor - (criarDesconto(10)));
+  } else if (modo === 2) {
+    return (valor - criarDesconto(15));
+  } else if (modo === 3) {
+    return valor;
+  } else {
+    return (valor + (criarDesconto(10)));
+  };
+};
+
+console.log(modoDePagamento(1));
+
+___________________________________________________________________________________________
+
+
 
 
 
