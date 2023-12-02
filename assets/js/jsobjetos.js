@@ -101,3 +101,48 @@ ford.descrever();
 
 const uno = new Carros('Uno', 'vermelho', [precoCombustivel], 12);
 uno.descrever();
+
+console.log('******* EXERCÍCIO 2 *******');
+
+class Pessoas {
+  nome;
+  peso;
+  altura;
+
+  constructor (nome, peso, altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+    // this.imc = peso / Math.pow(altura, 2);
+    // this.imcDado = imcDado;
+  }
+
+  calcularImc() {
+    return this.peso / Math.pow(this.altura, 2);
+  } 
+
+  imcClassificar () {
+    const imc = this.calcularImc();
+    if (imc < 18.5) {
+      return "abaixo do peso";
+    } else if (imc >= 18.5 && imc < 25) {
+      return "com o peso normal";
+    } else if (imc >= 25 && imc < 30) {
+      return "acima do peso";
+    } else if (imc >= 30 && imc < 40) {
+      return "obeso";
+    } else {
+      return "obesidade grave";
+    };
+  }
+
+  descrever () {
+    const imc = this.calcularImc();
+    const imcDado = this.imcClassificar();
+    console.log(`${this.nome} seu IMC é de ${(imc.toFixed(0))}, dessa forma você está ${(imcDado)}.`)
+  }
+}
+
+
+const flavia2 = new Pessoas ('Flávia Oliveira', 72, 1.65);
+flavia2.descrever();
