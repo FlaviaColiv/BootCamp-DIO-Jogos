@@ -83,3 +83,34 @@ for (let i = 0; i < numeros.length; i++) {
 
 console.log(numeros);
 ___________________________________________________________________________________________
+
+IMPORTAÇÃO E EXPORTAÇÃO COM JS
+
+No Node.js
+
+gets - mostra as entradas
+print - mostra as saídas.
+
+NO ARQUIVO DE EXPORTAÇÃO 
+
+
+function gets() {
+  return 10;
+}
+
+function print(texto) {
+  console.log(texto);
+}
+
+module.exports = { gets, print };
+
+
+NO ARQUIVO DE IMPORTAÇÃO
+
+
+const { gets, print } = require('./funcoes-auxiliares');
+
+print(gets());
+
+
+.
