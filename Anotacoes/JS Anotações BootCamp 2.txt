@@ -111,6 +111,66 @@ NO ARQUIVO DE IMPORTAÇÃO
 const { gets, print } = require('./funcoes-auxiliares');
 
 print(gets());
+____________________________________________________________________________________________
+
+SELECIONAR O MAIOR VALOR
+
+	NO ARQUIVO DE EXPORTAÇÃO
+
+const entradas = [5, 50, 10, 98, 23];
+let i = 0;
+
+function gets() {
+  const valor = entradas[i];
+  i = i + 1;
+  return valor;
+}
+
+function print(texto) {
+  console.log(texto);
+}
+
+module.exports = { gets, print };
+
+	NO ARQUIVO DE IMPORTAÇÃO
+
+const { gets, print } = require('./funcoes-auxiliares');
+
+const numerosSorteados = [];
+
+for (let i = 0; i < 5; i++) {
+  const numeroSorteados = gets();
+  numerosSorteados.push(numeroSorteados); 
+}
+
+print(numerosSorteados);
+
+let maiorValor = 0;
+
+for (let i = 0; i < numerosSorteados.length; i++) {
+  const numeroSorteados = numerosSorteados[i];
+  if (numeroSorteados > maiorValor) {
+    maiorValor = numeroSorteados;
+  }
+}
+
+print(maiorValor);
+
+OU
+	const quantidadeDeAlunos = gets();
+	let maiorValorEncontrado = 0;
+	
+	for (let i = 0; i < quantidadeDeAlunos; i++) {
+		const numeroSorteados = gets();
+		if (numeroSorteados > maiorValorEncontrado) {
+			maiorValorEncontrado = numeroSorteado;
+		}
+	}
+
+	print(maiorValorEncontrado);
+____________________________________________________________________________________________
+
+
 
 
 .
