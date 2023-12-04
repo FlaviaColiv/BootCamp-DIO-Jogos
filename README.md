@@ -8,3 +8,5 @@ E, projetos finais.
 ## Projeto 1
 
 Criação de uma landing page: https://github.com/FlaviaColiv/trilha-css-desafio-01.git
+
+#CSS #HTML #JS
