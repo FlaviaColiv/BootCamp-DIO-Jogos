@@ -1,0 +1,19 @@
+VARIÁVEIS
+
+velha guarda 
+	var nome = declaração;
+___________________________________________________________________________
+HOISTING
+
+Issamento - 
+Não é o caso com funções, mas com variáveis acontece, a ordem de declaração importa, em linguagem for procedual.
+
+Funções são objetos.
+___________________________________________________________________________
+
+Var - ele vaza dos escopos, pois, sofre issamento.
+Let - se mantém dentro do seu bloco. 
+Const - se mantém dentro do bloco, mas, não pode sofrer uma nova atribuição.
+___________________________________________________________________________
+
+
