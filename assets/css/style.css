@@ -2,7 +2,11 @@
 @import url('./reset.css');
 
 * {
-    font-family: var(--fonte-texto);
+    font-family: var(--fonte-nome);
+}
+
+.about {
+    font-size: 5rem;
 }
 
 
