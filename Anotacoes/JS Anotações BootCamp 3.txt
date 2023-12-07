@@ -15,5 +15,27 @@ Var - ele vaza dos escopos, pois, sofre issamento.
 Let - se mantém dentro do seu bloco. 
 Const - se mantém dentro do bloco, mas, não pode sofrer uma nova atribuição.
 ___________________________________________________________________________
+TIPOS DE DADOS
+
+Fracamente tipada - não há rigidez
+
+	TIPOS PRIMITIVOS - imutáveis.
+	
+	boolean
+	null
+	undefined
+	number
+	string
+	symbol
 
 
+	WRAPPERS
+	COERÇÃO DE TIPOS
+	BOOLEAN
+	NULL
+	UNDEFINED
+
+
+
+
+.
