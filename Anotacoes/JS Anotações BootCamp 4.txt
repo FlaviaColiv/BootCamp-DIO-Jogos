@@ -45,11 +45,135 @@ function gritar(prefixo) {
     console.log(prefixo, this.nome)
 }
 
-gritar.apply(pessoa, ['Olá'])
+gritar.apply(pessoa, ['Olá']) /* resulta em Olá Flávia */
 
-gritar.call(pessoa, 'Olaaaaa')
+gritar.call(pessoa, 'Olaaaaa') /* resulta em Olaaaaa Flávia */
+____________________________________________________________________________________________
+LISTAS
+
+	FOREACH - percorre os dados de uma lista (ele é mais lento que a outra estratégia)
+value, index, array
+
+		lista.forEach((value, i, listRef) => {
+    			console.log(value, i, listRef),
+    			console.log(value + i)
+		})
 
 
+const cb = (value, i, listRef) => {
+    console.log(value + i)
+}
+
+lista.forEach(cb)
+
+for (let i = 0; i < lista.length; i++) {
+    const element = array[i];
+    cb(element, i, lista) /* representa o mesmo que o lista.forEach(cb) */
+}
+
+console.log('********** O normal de percorrer a lista **********')
+
+lista.forEach((value) => {
+    console.log(value)
+})
+
+
+------------------------------------------------------------------------------------------
+	FILTER - retorna uma nova lista, sem alterar a lista anterior, só filtra dados.
+		recebe uma função que retorna um booleano.
+
+console.log('**********FILTER**********')
+
+const listaDeNumerosPares = lista.filter((element) => {
+    return (element % 2 === 0)
+}) 
+console.log('Lista Completa', lista)
+console.log('Nova Lista do filter', listaDeNumerosPares)
+
+-------------------------------------------------------------------------------------------
+
+console.log('**********MAP**********')
+
+/*lista de elementos em HTML */
+
+class Pessoa {
+    constructor(name) {
+        this.name = name
+    }
+}
+
+const lista1 = [new Pessoa('Flávia'), new Pessoa('Cristian'), new Pessoa('Livia'), new Pessoa('João')]
+
+console.log(lista1)
+
+const listaNomes = lista1.map((element) => {
+    return element.name /*converta elemento em string */
+})
+		ou assim:
+		const listaNomes = lista1.map((element) => element.name /*converta elemento em string */)
+
+console.log(listaNomes)
+
+const listaNomes2 = lista1.map((element, i) => {
+    return `${i} - ${element.name}` /*converta elemento em string */
+})
+
+console.log(listaNomes2)
+
+### transforma em uma lista em HTML
+
+	const listaNomes3 = lista1.map((element) => {
+  	 return ` <li>
+        	${element.name}
+    	</li>
+    	`
+	})
+
+	console.log(listaNomes3)
+--------------------------------------------------------------------------------------------
+	REDUCE
+
+console.log('*******************  REDUCE  *******************')
+
+/*percorrendo toda a lista e transformando em único valor*/
+//percorrer a lista de um em um e reduzir à único elemento
+
+const somaDeTodosOsNumeros = lista.reduce((previous, current) => {
+    console.log('Cálculo realizado em cada etapa', previous, current)
+    return previous + current
+}, 0 /* valor inicial*/)
+
+console.log('Soma de todos os numeros da lista =', somaDeTodosOsNumeros)
+--------------------------------------------------------------------------------------------
+	JOIN
+
+console.log('*******************  JOIN  *******************')
+
+//JUNTAR e transformar em uma string
+
+console.log(lista.join('/'))
+
+
+const objetos = [{ nome: 'Flávia'}, { nome: 'Cristian'}, { nome: 'Lívia'}, {nome: 'Luzia'}]
+console.log(objetos.map((e) => e.nome).join(', '))
+
+console.log(
+    objetos.map(e => e.nome)
+    .filter((e) => e.startsWith('L'))
+    .join(', ')
+)
+
+EM HTML
+	const elementosEmHtml = objetos
+    		.filter((e) => e.nome.startsWith('L'))
+		.map(e => `<li>${e.nome}</li>`)
+    		.join('')
+
+	console.log(elementosEmHtml)
+
+-------------------------------------------------------------------------------------------
+	CONCAT 
+ 		Concatenar diferentes listas.
 
 
 .
