@@ -1,2 +1,28 @@
 FUNÇÃO E MANIPULAÇÃO DE LISTAS COM JAVASCRIPT
 
+First Class Functions
+Higher Order Functions
+
+	Funções podem ser atribuídas às variáveis.
+
+function funcao1() {
+    console.log(this)
+} /* a parte interna é um contexto - tranforma em objeto - declarada de forma explícita*/
+
+const funcao2 = () => {
+    console.log(this)
+} /* não tem contexto - tranforma em janela */
+
+const flavia = {
+    nome: 'Flávia',
+    funcao1,
+    funcao2
+}
+
+flavia.funcao1()
+flavia.funcao2()
+
+
+FECHAMENTOS DE FUNÇÃO
+
+	Closures
