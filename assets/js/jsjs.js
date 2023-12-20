@@ -29,3 +29,39 @@ console.log(somaParcial(20))
 console.log(somaParcial(30))
 console.log(somaParcial(40))
 
+console.log('****************************************')
+
+const pessoa = {
+    nome: 'Flávia',
+    idade: 34
+}
+
+function gritar(prefixo) {
+    console.log(prefixo, this.nome)
+}
+
+gritar.apply(pessoa, ['Olá'])
+
+gritar.call(pessoa, 'Olaaaaa')
+
+console.log('*********** CALCULADORA ***********')
+
+function adicao(x, y) {
+    return x + y
+}
+
+function multiplicacao(x, y) {
+    return x * y
+}
+
+function divisao(x, y) {
+    return x / y
+}
+
+function calculadora(x, operacao, y) {
+    console.log(operacao(x, y))
+}
+
+calculadora(10, adicao, 20)
+calculadora(10, multiplicacao, 20)
+calculadora(10, divisao, 20)

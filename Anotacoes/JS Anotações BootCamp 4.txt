@@ -22,7 +22,34 @@ const flavia = {
 flavia.funcao1()
 flavia.funcao2()
 
+__________________________________________________________________________________________
+INVOCAÇÃO DE FUNCÇÕES
 
-FECHAMENTOS DE FUNÇÃO
+	DECLARAÇÃO EXPLÍCITA
+		function teste() {
+			console.log('Teste')
+		}
 
-	Closures
+	1 INVOCAÇÃO
+		teste()
+
+	2 INVOCAÇÃO
+		teste.apply(contexto, atributos)
+
+const pessoa = {
+    nome: 'Flávia',
+    idade: 34
+}
+
+function gritar(prefixo) {
+    console.log(prefixo, this.nome)
+}
+
+gritar.apply(pessoa, ['Olá'])
+
+gritar.call(pessoa, 'Olaaaaa')
+
+
+
+
+.
