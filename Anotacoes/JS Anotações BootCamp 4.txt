@@ -175,5 +175,12 @@ EM HTML
 	CONCAT 
  		Concatenar diferentes listas.
 
+___________________________________________________________________________________________
+
+Arquivo csv
+
+colunas separadas por ;
+e linhas por 
+
 
 .
